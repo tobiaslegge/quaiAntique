@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Quai Antique</title>
+	<meta name="viewport" content="width=device-width">
+	<link rel="stylesheet" type="text/css" href="Antique.css">
+</head>
+<body>
+    <header>
+	    <nav>
+			<ul>
+				<li><a href="#about">A propos</a></li>
+				<li><a href="#menu">Menu</a></li>
+				<li><a href="#reservations">Réservations</a></li>
+			</ul>
+		</nav>
+	</header>
+	<section id="welcome">
+		<h1>Quai Antique</h1>
+		<h2> La restauration, un métier de passion</h2>
+		<p> Depuis 2001, notre restaurant de gastronomie s'est établi comme l'un des meilleurs endroits pour savourer des plats exquis préparés avec passion et dévouement. En tant que chef et propriétaire, j'ai toujours veillé à ce que la qualité du service soit au centre de nos préoccupations, en proposant une première réservation inoubliable à tous nos clients.
+			Nous sommes fiers de notre équipe de professionnels passionnés et expérimentés, qui travaillent dur pour s'assurer que chaque plat est préparé avec les meilleurs ingrédients et la plus grande attention aux détails. De plus, nous sommes constamment à la recherche de nouvelles saveurs et de nouvelles inspirations pour élargir notre carte et offrir à nos clients une expérience culinaire toujours plus riche et diversifiée.
+			Nous sommes impatients de vous accueillir dans notre restaurant gastronomique, où nous sommes sûrs que vous trouverez une cuisine de qualité et un service exceptionnel qui répondront à toutes vos attentes. Que ce soit pour un dîner romantique ou une soirée entre amis, notre restaurant est l'endroit idéal pour découvrir une cuisine raffinée et des saveurs uniques.</p>
+	</section>
+
+	<section id="about">
+		<h2>A propos</h2>
+		<p>Le Quai Antique. Le troisième restaurant du célèbre Chef Arnaud Michant. Aujourd'hui rendez-vous à Chambéry. Plus encore qu'avec ses deux autres restaurants, Arnaud Michant voit la promesse d'un voyage dans son univers gastronomique, à travers une cuisine sans artifices.</p>
+	</section>
+
+	<section id="horaires">
+		<h2>Nos Horaires D'ouverture!</h2>
+		<button id="nosHoraires"><a href="horaires.html">horaires</a></button>
+	</section>
+
+	<section id="menu">
+		<h2>La Carte</h2>
+		<p>Ici, vous pouvez afficher votre menu avec des images et des descriptions détaillées des plats. Vous pouvez également inclure des informations sur le prix, les heures de service et les offres spéciales.</p>
+		<button id="myButton"><a href="Lacarte.html">la carte.</a></button>
+		<button id="myButton"><a href="menu.html">Menu</a></button>
+	</section>
+
+	<section id="reservations">
+		<h2>Réservations</h2>
+		<p>Ici, vous pouvez afficher le formulaire de réservation en ligne pour que les clients puissent réserver une table.</p>
+
+		<form>
+			<label>Nom:</label>
+			<input type="text" name="name" required><br>
+
+			<label>Email:</label>
+			<input type="email" name="email" required><br>
+
+			<label>Téléphone:</label>
+			<input type="tel" name="phone" required><br>
+
+			<label>Date:</label>
+			<input type="date" name="date" required><br>
+
+			<label>Heure:</label>
+			<input type="time" name="time" required><br>
+
+			<input type="submit" value="Réserver">
+		</form>
+	</section>
+
+	<footer>
+		<p>Droits réservés &copy; <span id="year"></span> Quai Antique. Tous droits réservés.</p>
+	</footer>
+
+	<script>
+		// Obtenir l'année pour le pied de page
+		var year = new Date().getFullYear();
+		document.getElementById("year").innerHTML = year;
+	</script>
+
+</body>
+</html>
